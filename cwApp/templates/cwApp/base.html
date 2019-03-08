@@ -10,17 +10,17 @@
 <body>
 {% block header %}
 
-<div class="page1">
- <aside>
+<div class="page1"> {# base template with grid #}
+ <aside>   {# section for page #}
     {% block aside %}
     {% endblock aside %}
 </aside>
-<section>
+<section>   {# section for article #}
     {% block section %}
     {% endblock section %}
 </section>
 
-    <footer>
+    <footer>   {# sections for buttons #}
      {% block footer %}
      {% endblock footer %}
  </footer>
