@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'cwApp/css/base.css' %}">
+    <script src="{% static 'cwApp/js/jquery-3.3.1.min.js' %}"></script>
+</head>
+<body>
+{% block header %}
+
+<div class="page1">
+ <aside>
+    {% block aside %}
+    {% endblock aside %}
+</aside>
+<section>
+    {% block section %}
+    {% endblock section %}
+</section>
+
+    <footer>
+     {% block footer %}
+     {% endblock footer %}
+ </footer>
+</div>
+
+{% endblock header %}
+</body>
+</html>

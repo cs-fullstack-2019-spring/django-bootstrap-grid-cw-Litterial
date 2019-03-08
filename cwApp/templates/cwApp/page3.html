@@ -1,0 +1,28 @@
+{% extends 'cwApp/base.html' %}
+
+
+{% block header %}
+<div class="page3">
+    <aside>
+        {% block aside %}
+        Page <p class="bold">Three</p>
+
+
+        {% endblock aside %}
+    </aside>
+    <section>
+        {% block section %}
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus metus, convallis nec aliquet non, ultrices sit amet nunc. Aenean fermentum tellus in tortor iaculis consequat. Maecenas in nulla semper, porttitor eros sodales, ornare odio. Curabitur ac vulputate tellus. In accumsan congue pulvinar. Morbi consectetur odio tortor, vel commodo nulla convallis id. Pellentesque dignissim urna dapibus risus condimentum, vel molestie nibh suscipit. Morbi vulputate leo vel pellentesque suscipit. Aenean sollicitudin magna ligula, non dapibus leo imperdiet nec. Nulla tellus lectus, elementum vel laoreet nec, feugiat vel felis. Nullam at elit dui. Nam cursus euismod mauris, venenatis pulvinar libero rutrum nec. Vivamus tempus sagittis massa at rutrum. Nunc mollis orci quis scelerisque lacinia. Vivamus sodales, sem fringilla facilisis maximus, ex nisl efficitur felis, placerat cursus sapien risus ut lorem. Suspendisse sapien ante, consequat lacinia sapien in, convallis tincidunt urna.
+        </p>
+        {% endblock section %}
+    </section>
+
+    <footer>
+        {% block footer %}
+        <a href="{%  url 'p2' %}"><button>Previous</button></a>
+
+        {% endblock footer %}
+    </footer>
+</div>
+
+{% endblock header %}
